@@ -92,36 +92,41 @@ const Poll = ({ data, currentStep, onNext, onBack, onFinal }) => {
           </div>
         ) : (
           <div className="flex flex-col items-center justify-center py-10 text-center spring-in">
-            <div className="mb-8 relative">
-              <div className="w-32 h-32 rounded-full border-4 border-primary/20 p-1 bg-white dark:bg-slate-800 shadow-lg">
+            {/* Portrait area */}
+            <div className="mb-12 relative flex flex-col items-center">
+              <div className="w-32 h-32 rounded-full border-4 border-white dark:border-slate-800 p-1 bg-white dark:bg-slate-800 shadow-xl mb-8">
                 <img 
                     alt="Candidate portrait" 
                     className="w-full h-full rounded-full object-cover" 
                     src={portraitImg}
                 />
+                <div className="absolute bottom-6 right-0 bg-primary text-white p-2 rounded-full shadow-lg border-2 border-white dark:border-slate-800 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-sm">verified</span>
+                </div>
               </div>
-              <div className="py-12 px-8 rounded-[2.5rem] bg-primary text-white shadow-2xl shadow-primary/30 relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <h3 className="text-4xl font-black tracking-tight leading-tight relative z-10">
-                For better representation, <br/>vote <span className="underline decoration-white/40 underline-offset-8">Amarachi</span> for 400L SE Senator
-              </h3>
+
+              <div className="py-12 px-8 rounded-[2.5rem] bg-primary text-white shadow-2xl shadow-primary/30 relative overflow-hidden group max-w-lg mb-4">
+                <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <h3 className="text-3xl lg:text-4xl font-black tracking-tight leading-tight relative z-10">
+                  For better representation, <br/>vote <span className="underline decoration-white/40 underline-offset-8 font-black">Amarachi</span> for 400L SE Senator
+                </h3>
+              </div>
+              <p className="text-slate-500 dark:text-slate-400 font-bold bg-primary/5 px-4 py-1 rounded-full text-sm uppercase tracking-widest border border-primary/10 mb-10 stagger-2">400L Software Engineering</p>
             </div>
-            <p className="text-slate-600 dark:text-slate-400 text-lg px-4 mb-10">
-              400L Software Engineering Senator Candidate
-            </p>
-            <div className="flex flex-col gap-4 w-full">
+
+            <div className="flex flex-col md:flex-row gap-4 w-full max-w-2xl px-6">
               <button 
-                className="flex items-center justify-center gap-3 overflow-hidden rounded-xl h-16 px-6 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/20 border-2 border-transparent active:scale-95 transition-all hover:bg-primary/90"
+                className="flex-1 flex items-center justify-center gap-3 overflow-hidden rounded-2xl h-16 px-6 bg-primary text-white text-lg font-bold shadow-xl shadow-primary/20 border-2 border-transparent active:scale-95 transition-all hover:bg-primary/90"
                 onClick={() => { setIsRecording(true); setTimeout(() => onFinal(true), 1500); }}
               >
-                <span className="text-2xl">✅</span>
+                <span className="text-2xl">⚡</span>
                 <span>Yes, I will!</span>
               </button>
               <button 
-                className="flex items-center justify-center gap-3 overflow-hidden rounded-xl h-16 px-6 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-lg font-bold shadow-sm border-2 border-primary/30 active:scale-95 transition-all hover:bg-primary/5"
+                className="flex-1 flex items-center justify-center gap-3 overflow-hidden rounded-2xl h-16 px-6 bg-white dark:bg-slate-900 text-primary text-lg font-bold shadow-sm border-2 border-primary/20 active:scale-95 transition-all hover:bg-primary/5"
                 onClick={() => { setIsRecording(true); setTimeout(() => onFinal(false), 1500); }}
               >
-                <span className="text-2xl">🤔</span>
+                <span className="text-2xl">✨</span>
                 <span>Still deciding</span>
               </button>
             </div>
