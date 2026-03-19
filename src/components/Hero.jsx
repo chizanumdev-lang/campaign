@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../Gemini_Generated_Image_kdq976kdq976kdq9.png';
+import heroImg from '../amarachi_hero.jpg';
 
 const Hero = ({ onStart }) => {
   return (
@@ -20,7 +20,7 @@ const Hero = ({ onStart }) => {
           <div className="flex flex-col gap-6 text-left">
             <div className="inline-flex items-center gap-3 bg-primary/10 w-fit px-4 py-2 rounded-full border border-primary/20 fade-up">
               <span className="material-symbols-outlined text-primary text-sm">campaign</span>
-              <span className="text-primary font-black text-xs uppercase tracking-widest">Senator Campaign 2024</span>
+              <span className="text-primary font-black text-xs uppercase tracking-widest">BUCC 26/27 Election</span>
             </div>
             <h1 className="text-slate-950 dark:text-white text-5xl lg:text-7xl font-black leading-[1.1] tracking-tighter fade-up stagger-1">
               Voting for <br/><span className="text-primary">Amarachi Aguinam</span>
