@@ -35,7 +35,7 @@ const policies = [
 const Policies = () => {
   return (
     <section className="py-12 border-t border-slate-200 dark:border-slate-800">
-      <h2 className="text-slate-950 dark:text-white text-4xl font-black leading-tight tracking-tight mb-12 fade-up">Our Shared Vision</h2>
+      <h2 className="text-slate-950 dark:text-white text-4xl font-black leading-tight tracking-tight mb-12 fade-up">My Vision</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {policies.map((p, i) => (
           <div key={i} className={`flex flex-col overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm transition-transform hover:scale-[1.01] fade-up stagger-${i}`}>
