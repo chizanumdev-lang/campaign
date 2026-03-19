@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import portraitImg from '../Gemini_Generated_Image_5v65bx5v65bx5v65.png';
+import portraitImg from '../amarachi_hero.jpg';
 
 const Poll = ({ data, currentStep, onNext, onBack, onFinal }) => {
   const [selected, setSelected] = useState(null);
