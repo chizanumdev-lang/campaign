@@ -48,7 +48,7 @@ function App() {
 
   useEffect(() => {
     // Fetch initial stats from backend
-    fetch('http://localhost:3001/api/stats')
+    fetch('/api/stats')
       .then(res => res.json())
       .then(data => {
         if (data.total) {
@@ -100,7 +100,7 @@ function App() {
 
   const submitFinalVote = (isYes) => {
     // Send background request to save results
-    fetch('http://localhost:3001/api/poll', {
+    fetch('/api/poll', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
