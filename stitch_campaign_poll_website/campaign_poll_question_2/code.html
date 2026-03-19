@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee8c2b",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Campaign Poll: Question 2</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative mx-auto flex h-full min-h-screen max-w-[430px] flex-col bg-background-light dark:bg-background-dark overflow-x-hidden border-x border-slate-200 dark:border-slate-800">
+<!-- Header -->
+<div class="flex items-center p-4 pb-2 justify-between">
+<button class="flex size-10 items-center justify-center rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">arrow_back</span>
+</button>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-10">Senator Campaign Poll</h2>
+</div>
+<!-- Progress Section -->
+<div class="flex flex-col gap-3 p-4">
+<div class="flex gap-6 justify-between items-end">
+<p class="text-slate-900 dark:text-slate-100 text-base font-medium leading-normal">Campaign Progress</p>
+<p class="text-primary text-sm font-bold leading-normal">Step 2 of 3</p>
+</div>
+<div class="h-2.5 w-full rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 66%;"></div>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col px-4 pt-6 flex-grow">
+<span class="text-primary font-bold uppercase tracking-widest text-xs mb-2">Question 02</span>
+<h1 class="text-slate-900 dark:text-slate-100 text-[24px] font-bold leading-tight tracking-tight mb-8">
+                Which area of the 400L Software Engineering curriculum needs most improvement?
+            </h1>
+<!-- Options List -->
+<div class="flex flex-col gap-4">
+<label class="relative flex items-center p-4 rounded-xl border-2 border-primary bg-primary/5 cursor-pointer">
+<input checked="" class="hidden peer" name="poll" type="radio"/>
+<div class="flex-1">
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Practical Workshop Sessions</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm">More hands-on coding environments</p>
+</div>
+<div class="size-6 rounded-full border-2 border-primary flex items-center justify-center">
+<div class="size-3 rounded-full bg-primary"></div>
+</div>
+</label>
+<label class="relative flex items-center p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-colors cursor-pointer">
+<input class="hidden" name="poll" type="radio"/>
+<div class="flex-1">
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Industry Partnerships</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Internships and expert guest lectures</p>
+</div>
+<div class="size-6 rounded-full border-2 border-slate-300 dark:border-slate-600"></div>
+</label>
+<label class="relative flex items-center p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-colors cursor-pointer">
+<input class="hidden" name="poll" type="radio"/>
+<div class="flex-1">
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Advanced Tech Stack Coverage</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Focus on modern frameworks like React/Go</p>
+</div>
+<div class="size-6 rounded-full border-2 border-slate-300 dark:border-slate-600"></div>
+</label>
+<label class="relative flex items-center p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-colors cursor-pointer">
+<input class="hidden" name="poll" type="radio"/>
+<div class="flex-1">
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Assessment &amp; Grading Policy</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Clearer rubrics and faster feedback</p>
+</div>
+<div class="size-6 rounded-full border-2 border-slate-300 dark:border-slate-600"></div>
+</label>
+</div>
+</div>
+<!-- Navigation Buttons -->
+<div class="p-4 flex gap-3 mt-8">
+<button class="flex-1 h-14 rounded-xl border border-slate-200 dark:border-slate-700 font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
+                Back
+            </button>
+<button class="flex-[2] h-14 rounded-xl bg-primary text-white font-bold hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary/20">
+                Next Question
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="mt-auto flex gap-2 border-t border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark px-4 pb-8 pt-3">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-[1]">poll</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">campaign</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+</a>
+</div>
+</div>
+</body></html>

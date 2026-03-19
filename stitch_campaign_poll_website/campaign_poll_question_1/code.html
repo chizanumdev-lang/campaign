@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Campaign Poll: Question 1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&amp;family=Noto+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee8c2b",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .font-display {
+            font-family: 'Newsreader', serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center p-4 justify-between">
+<button class="text-slate-700 dark:text-slate-300 flex size-12 items-center justify-start">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h2 class="font-display text-xl font-bold flex-1 text-center pr-12">Senator Campaign</h2>
+</header>
+<!-- Progress Section -->
+<div class="flex flex-col gap-3 px-6 py-4">
+<div class="flex justify-between items-end">
+<div>
+<span class="text-primary font-bold text-sm tracking-wider uppercase">Question 1</span>
+<p class="text-slate-900 dark:text-slate-100 text-lg font-medium">Progress</p>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">33% Complete</p>
+</div>
+<div class="h-2.5 w-full bg-primary/20 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 33.33%;"></div>
+</div>
+</div>
+<!-- Question Section -->
+<main class="flex-1 flex flex-col px-6">
+<h1 class="font-display text-3xl font-bold leading-tight pt-8 pb-10 text-slate-900 dark:text-slate-100">
+            What do you think is the biggest challenge for 400L SE students?
+        </h1>
+<!-- Options Container -->
+<div class="flex flex-col gap-4">
+<label class="group relative flex items-center justify-between cursor-pointer rounded-xl border-2 border-primary/10 bg-white dark:bg-background-dark/50 p-5 transition-all hover:border-primary/40 active:scale-[0.98]">
+<input class="peer hidden" name="challenge" type="radio" value="lab-access"/>
+<div class="flex flex-col">
+<span class="text-lg font-semibold text-slate-800 dark:text-slate-200">Lab Access</span>
+<span class="text-xs text-slate-500">Facility availability &amp; hardware</span>
+</div>
+<div class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-primary/30 peer-checked:border-primary peer-checked:bg-primary">
+<div class="h-2 w-2 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div>
+</div>
+</label>
+<label class="group relative flex items-center justify-between cursor-pointer rounded-xl border-2 border-primary/10 bg-white dark:bg-background-dark/50 p-5 transition-all hover:border-primary/40 active:scale-[0.98]">
+<input class="peer hidden" name="challenge" type="radio" value="deadlines"/>
+<div class="flex flex-col">
+<span class="text-lg font-semibold text-slate-800 dark:text-slate-200">Project Deadlines</span>
+<span class="text-xs text-slate-500">Tight schedules &amp; documentation</span>
+</div>
+<div class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-primary/30 peer-checked:border-primary peer-checked:bg-primary">
+<div class="h-2 w-2 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div>
+</div>
+</label>
+<label class="group relative flex items-center justify-between cursor-pointer rounded-xl border-2 border-primary/10 bg-white dark:bg-background-dark/50 p-5 transition-all hover:border-primary/40 active:scale-[0.98]">
+<input class="peer hidden" name="challenge" type="radio" value="placements"/>
+<div class="flex flex-col">
+<span class="text-lg font-semibold text-slate-800 dark:text-slate-200">Job Placements</span>
+<span class="text-xs text-slate-500">Internship search &amp; networking</span>
+</div>
+<div class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-primary/30 peer-checked:border-primary peer-checked:bg-primary">
+<div class="h-2 w-2 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div>
+</div>
+</label>
+<label class="group relative flex items-center justify-between cursor-pointer rounded-xl border-2 border-primary/10 bg-white dark:bg-background-dark/50 p-5 transition-all hover:border-primary/40 active:scale-[0.98]">
+<input class="peer hidden" name="challenge" type="radio" value="workload"/>
+<div class="flex flex-col">
+<span class="text-lg font-semibold text-slate-800 dark:text-slate-200">Course Load</span>
+<span class="text-xs text-slate-500">Complex theory &amp; vast syllabus</span>
+</div>
+<div class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-primary/30 peer-checked:border-primary peer-checked:bg-primary">
+<div class="h-2 w-2 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div>
+</div>
+</label>
+</div>
+</main>
+<!-- Bottom Action Bar -->
+<footer class="p-6 pb-10 bg-gradient-to-t from-background-light dark:from-background-dark to-transparent">
+<button class="w-full flex h-14 items-center justify-center rounded-xl bg-primary text-background-dark text-lg font-bold shadow-lg shadow-primary/20 transition-all hover:opacity-90 active:scale-95">
+<span>Next Step</span>
+<span class="material-symbols-outlined ml-2">chevron_right</span>
+</button>
+<p class="text-center text-slate-400 text-xs mt-6 font-medium">Your response will be used to shape our 2024 agenda.</p>
+</footer>
+</body></html>
