@@ -1,5 +1,5 @@
 import React from 'react';
-import campaignImg from '../Gemini_Generated_Image_7qduno7qduno7qdu.png';
+import campaignImg from '../hero.jpg';
 
 const ThankYou = ({ onShare }) => {
   return (

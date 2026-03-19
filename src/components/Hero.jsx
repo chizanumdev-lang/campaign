@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../amarachi_hero.jpg';
+import heroImg from '../hero.jpg';
 
 const Hero = ({ onStart }) => {
   return (
@@ -7,7 +7,7 @@ const Hero = ({ onStart }) => {
       <div className="flex flex-col lg:flex-row gap-12 items-center">
         <div className="w-full lg:w-1/2 flex flex-col gap-4">
           <div 
-            className="w-full bg-top bg-no-repeat aspect-[4/3] bg-cover rounded-3xl shadow-2xl border-8 border-white dark:border-slate-800 fade-up transition-transform hover:scale-[1.02]"
+            className="w-full bg-center bg-no-repeat aspect-[5/4] bg-cover rounded-3xl shadow-2xl border-8 border-white dark:border-slate-800 fade-up transition-transform hover:scale-[1.02]"
             style={{ backgroundImage: `url(${heroImg})` }}
           ></div>
           <div className="px-4 text-center lg:text-left fade-up stagger-1">
