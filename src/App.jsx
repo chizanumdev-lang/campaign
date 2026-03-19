@@ -167,7 +167,7 @@ function App() {
                   </a>
                 </div>
                 <div className="text-center">
-                  <p className="text-slate-500 dark:text-slate-500 text-[10px] font-bold uppercase tracking-widest">Authorized by the Campaign Committee for Amarachi Agunnam</p>
+                  <p className="text-slate-500 dark:text-slate-500 text-[10px] font-bold uppercase tracking-widest">Authorized by the Campaign Committee for Amarachi Aguinam</p>
                   <p className="text-slate-400 dark:text-slate-600 text-[10px] mt-2">© 2024 SE Student Association. All rights reserved.</p>
                 </div>
               </footer>

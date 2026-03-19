@@ -105,7 +105,7 @@ const Poll = ({ data, currentStep, onNext, onBack, onFinal }) => {
               </div>
             </div>
             <h1 className="text-slate-900 dark:text-slate-100 tracking-tight text-3xl font-bold leading-tight pb-3">
-              Will you be voting for <span className="text-primary">Amarachi Agunnam</span>?
+              Will you be voting for <span className="text-primary">Amarachi Aguinam</span>?
             </h1>
             <p className="text-slate-600 dark:text-slate-400 text-lg px-4 mb-10">
               400L Software Engineering Senator Candidate

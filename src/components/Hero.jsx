@@ -17,7 +17,7 @@ const Hero = ({ onStart }) => {
               <span className="text-primary font-black text-xs uppercase tracking-widest">Senator Campaign 2024</span>
             </div>
             <h1 className="text-slate-950 dark:text-white text-5xl lg:text-7xl font-black leading-[1.1] tracking-tighter fade-up stagger-1">
-              Voting for <br/><span className="text-primary">Amarachi Agunnam</span>
+              Voting for <br/><span className="text-primary">Amarachi Aguinam</span>
             </h1>
             <p className="text-slate-600 dark:text-slate-400 text-xl lg:text-2xl font-medium leading-relaxed max-w-xl fade-up stagger-2">
               Your voice shapes my agenda. Together, we build a better engineering culture for 400L Software Engineering.
