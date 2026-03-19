@@ -145,7 +145,7 @@ const Poll = ({ data, currentStep, onNext, onBack, onFinal }) => {
             <span>{currentStep === data.length - 1 ? 'Final Step' : 'Next Step'}</span>
             <span className="material-symbols-outlined ml-2">chevron_right</span>
           </button>
-          <p className="text-center text-slate-400 text-xs mt-6 font-medium">Your response will be used to shape our 2024 agenda.</p>
+          <p className="text-center text-slate-400 text-xs mt-6 font-medium">Your response will be used to shape our 2026 agenda.</p>
         </footer>
       )}
     </div>

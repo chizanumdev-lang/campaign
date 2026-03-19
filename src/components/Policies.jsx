@@ -1,7 +1,9 @@
 import React from 'react';
-import policy1Img from '../Gemini_Generated_Image_7qduno7qduno7qdu.png';
-import policy2Img from '../Gemini_Generated_Image_kdq976kdq976kdq9.png';
+import policy1Img from '../academic-support.png';
+import policy2Img from '../student-welfare.png';
 import policy3Img from '../Gemini_Generated_Image_5v65bx5v65bx5v65.png';
+import policy4Img from '../class-unity.png';
+
 
 const policies = [
   { 
@@ -26,7 +28,7 @@ const policies = [
     icon: 'groups', 
     title: 'Class Unity', 
     desc: 'As we approach the end of our journey together, I want to strengthen the bond within our class and help create a final year experience that feels more connected, inclusive, and meaningful.',
-    img: policy1Img // Reusing an image since I only have 3 generated ones
+    img: policy4Img // Reusing an image since I only have 3 generated ones
   }
 ];
 

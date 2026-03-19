@@ -159,7 +159,7 @@ function App() {
                   >
                     <span className="material-symbols-outlined">share</span>
                   </button>
-                  <a className="p-3 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 shadow-sm border border-slate-200 dark:border-slate-700 hover:scale-110 transition-transform" href="mailto:support@amarachi2024.com">
+                  <a className="p-3 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 shadow-sm border border-slate-200 dark:border-slate-700 hover:scale-110 transition-transform" href="mailto:support@amarachi2026.com">
                     <span className="material-symbols-outlined">mail</span>
                   </a>
                   <a className="p-3 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 shadow-sm border border-slate-200 dark:border-slate-700 hover:scale-110 transition-transform" href="#">

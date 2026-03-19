@@ -7,7 +7,7 @@ const Hero = ({ onStart }) => {
       <div className="flex flex-col lg:flex-row gap-12 items-center">
         <div className="w-full lg:w-1/2 flex flex-col gap-4">
           <div 
-            className="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-3xl shadow-2xl border-8 border-white dark:border-slate-800 fade-up transition-transform hover:scale-[1.02]"
+            className="w-full bg-top bg-no-repeat aspect-[4/3] bg-cover rounded-3xl shadow-2xl border-8 border-white dark:border-slate-800 fade-up transition-transform hover:scale-[1.02]"
             style={{ backgroundImage: `url(${heroImg})` }}
           ></div>
           <div className="px-4 text-center lg:text-left fade-up stagger-1">
@@ -23,7 +23,7 @@ const Hero = ({ onStart }) => {
               <span className="text-primary font-black text-xs uppercase tracking-widest">BUCC 26/27 Election</span>
             </div>
             <h1 className="text-slate-950 dark:text-white text-5xl lg:text-7xl font-black leading-[1.1] tracking-tighter fade-up stagger-1">
-              Voting for <br/><span className="text-primary">Amarachi Aguinam</span>
+              Amarachi Aguinam <br/><span className="text-primary">For Senator</span>
             </h1>
             <p className="text-slate-600 dark:text-slate-400 text-xl lg:text-2xl font-medium leading-relaxed max-w-xl fade-up stagger-2">
               Your voice shapes my agenda. Together, we build a better engineering culture for 400L Software Engineering.
