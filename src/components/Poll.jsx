@@ -100,13 +100,12 @@ const Poll = ({ data, currentStep, onNext, onBack, onFinal }) => {
                     src={portraitImg}
                 />
               </div>
-              <div className="absolute -bottom-2 -right-2 bg-primary text-white p-2 rounded-full shadow-md flex items-center justify-center border-2 border-background-light">
-                <span className="material-symbols-outlined text-sm">verified</span>
-              </div>
+              <div className="py-12 px-8 rounded-[2.5rem] bg-primary text-white shadow-2xl shadow-primary/30 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <h3 className="text-4xl font-black tracking-tight leading-tight relative z-10">
+                For better representation, <br/>vote <span className="underline decoration-white/40 underline-offset-8">Amarachi</span> for 400L SE Senator
+              </h3>
             </div>
-            <h1 className="text-slate-900 dark:text-slate-100 tracking-tight text-3xl font-bold leading-tight pb-3">
-              Will you be voting for <span className="text-primary">Amarachi Aguinam</span>?
-            </h1>
             <p className="text-slate-600 dark:text-slate-400 text-lg px-4 mb-10">
               400L Software Engineering Senator Candidate
             </p>

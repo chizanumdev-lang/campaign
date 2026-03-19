@@ -5,10 +5,16 @@ const Hero = ({ onStart }) => {
   return (
     <div className="flex flex-col gap-12 py-12 px-6">
       <div className="flex flex-col lg:flex-row gap-12 items-center">
-        <div 
-          className="w-full lg:w-1/2 bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-3xl shadow-2xl border-8 border-white dark:border-slate-800 fade-up transition-transform hover:scale-[1.02]"
-          style={{ backgroundImage: `url(${heroImg})` }}
-        ></div>
+        <div className="w-full lg:w-1/2 flex flex-col gap-4">
+          <div 
+            className="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-3xl shadow-2xl border-8 border-white dark:border-slate-800 fade-up transition-transform hover:scale-[1.02]"
+            style={{ backgroundImage: `url(${heroImg})` }}
+          ></div>
+          <div className="px-4 text-center lg:text-left fade-up stagger-1">
+            <p className="text-primary font-black text-sm tracking-[0.2em] uppercase">AMARACHI FOR 400L SE SENATOR</p>
+            <p className="text-slate-500 dark:text-slate-400 font-medium italic">"Representation with intention"</p>
+          </div>
+        </div>
 
         <div className="flex flex-col gap-8 lg:w-1/2">
           <div className="flex flex-col gap-6 text-left">
